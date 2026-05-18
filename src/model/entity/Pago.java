@@ -1,6 +1,4 @@
-package model.entity;
-
-import model.enums.MetodoPago;
+package model;
 
 import java.sql.Date;
 
@@ -16,7 +14,7 @@ public class Pago {
     }
 
     public Pago(int idPago, Consulta consulta,
-                MetodoPago metodoPago,
+                String metodoPago,
                 float monto,
                 Date fecha) {
 

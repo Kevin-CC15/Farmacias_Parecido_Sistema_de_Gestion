@@ -1,12 +1,10 @@
-package model.entity;
-
-import model.enums.Especialidad;
+package model;
 
 public class Medico {
 
     private int idMedico;
     private String nombreCompleto;
-    private model.enums.Especialidad especialidad;
+    private Especialidad especialidad;
     private String telefonoFijo;
     private String telefonoCelular;
     private String correoElectronico;
@@ -15,7 +13,7 @@ public class Medico {
     public Medico() {
     }
 
-    public Medico(int idMedico, String nombreCompleto, Especialidad especialidad,
+    public Medico(int idMedico, String nombreCompleto, String especialidad,
                   String telefonoFijo, String telefonoCelular,
                   String correoElectronico, boolean activo) {
 
@@ -44,11 +42,11 @@ public class Medico {
         this.nombreCompleto = nombreCompleto;
     }
 
-    public Especialidad getEspecialidad() {
+    public String getEspecialidad() {
         return especialidad;
     }
 
-    public void setEspecialidad(Especialidad especialidad) {
+    public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
 
