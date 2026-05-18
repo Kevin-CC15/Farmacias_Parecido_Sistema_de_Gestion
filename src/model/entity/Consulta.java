@@ -1,4 +1,7 @@
-package model;
+package model.entity;
+
+import model.entity.Cita;
+import model.entity.Enfermero;
 
 public class Consulta {
 

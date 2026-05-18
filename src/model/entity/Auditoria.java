@@ -1,3 +1,5 @@
+package model.entity;
+
 import java.sql.Timestamp;
 
 public class Auditoria {

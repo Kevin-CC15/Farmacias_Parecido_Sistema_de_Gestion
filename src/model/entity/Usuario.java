@@ -1,18 +1,21 @@
-package model;
+package model.entity;
+
+import model.enums.Rol;
 
 public class Usuario {
 
     private int idUsuario;
     private String nombreUsuario;
     private String contrasena;
-    private Rol rol;
+    private Rol rol;  // ✅ enum Rol
     private boolean activo;
 
     public Usuario() {
     }
 
+    // Constructor CORREGIDO
     public Usuario(int idUsuario, String nombreUsuario,
-                   String contrasena, String rol,
+                   String contrasena, Rol rol,  // ← Rol, no String
                    boolean activo) {
 
         this.idUsuario = idUsuario;
@@ -46,11 +49,13 @@ public class Usuario {
         this.contrasena = contrasena;
     }
 
-    public String getRol() {
+    // GETTER - devuelve Rol
+    public Rol getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    // SETTER - recibe Rol
+    public void setRol(Rol rol) {
         this.rol = rol;
     }
 
